@@ -1,6 +1,10 @@
-# Arrays
+# Arrays and Iteration
 
-Knowing about loops will really open up the possibilities of what we can do with code.  What are some examples of "loops" from everyday life?
+Most of the time, we interact with lists of things without even recognizing it. Accessing contact lists when we send texts, reading the chapters in a book, or watching a series of Snapchat stories are just a few examples. 
+
+Any time we encounter a list, we do things in an ordered sequence. Going over each item in a list is called **iteration** and is a topic we'll discuss often in computer programming.
+
+Let's examine a few examples and discuss how we can represent these processes in code.
 
 ![cat reading](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/cat-reading.gif)
 
@@ -8,7 +12,7 @@ Reading, might be one. It's happening so fast, but really you are looking at the
 
 Another might be your school day. You go to your first period class, and then second period, then third period, etc.  Your schedule, a list of what classes you have when, determines that first period is english, second is math and so on.
 
-Or maybe you make to-do lists either in your head or on paper.  You "loop" over the list and check off a task if it's completed.
+Or maybe you make to-do lists either in your head or on paper.  You **loop** over the list and check off a task if it's completed. Applying an action to an item in a list is known as **iteration**. 
 
 What these all have in common is that in each case we are *looping through* a **list** of things.
 
@@ -16,22 +20,7 @@ As programmers, the way we represent lists of things, that is to say *groups* or
 
 ## Array Basics
 
-You've seen one way that collections of things are grouped together with code-- that's JavaScript Objects, something like :
-
-```javascript
-var book = {
-  title: "Calvin and Hobbes: Weirdos from Another Planet",
-  author: "Bill Watterson",
-  pages: 147,
-  published: 1990
-}
-```
-
-While that is a collection of associated data, it doesn't really make sense to think of that as a list.  
-
-It's more like an online dictionary. You type in a word (*the key*) and get back the definition (*the value*). An online dictionary doesn't just load the entire dictionary into your browser and let you scroll through, looking at the first word, the second,.... the hundred-thousandth..., until you find the definition you're looking for.
-
-The distinction here is that Arrays *have an order*. Think: something we could loop through.
+The most important thing to know about Arrays is that htey *have an order*. Think: something we could loop through.
 
 ## Order (What's an Index)
 
@@ -42,26 +31,23 @@ Watch how an array is created, and then we'll break it down.
 As you can see to make an array you use square brackets and inside you put the items that make up the list separated by commas. Here's an example:
 
 ```javascript
-var testScores = [89, 91, 95, 86, 79];
+var testScores = [89, 91, 95, 86, 79]
+var students = ["Jasmine", "Edward", "Andre", "Maria"]
 ```
 
 ### Accessing Values
 
-With objects we got a value out of a collection with the help of the key.
-
-Something like, `student.firstName`.
-
-With arrays we don't really have keys, but we do have the order in the list. We can ask what *position* we want to get the value of.
+To get, or access, an item in arrays, We can ask what *position* we want to get the value of.
 
 The number of the position within the array is called the **index** of the array.
 
 We get the value at a certain index using square brackets written after the name of the array, like so:
 
 ```javascript
-myArray[index]
+students[index]
 ```
 
-Here's the list of countries again:
+Here's a list of countries from around the world:
 
 ```javascript
 var countries = ["Algeria", "Brazil", "Canada", "Denmark"]
@@ -171,12 +157,12 @@ The array represents a line at the grocery store. Translate the following series
 
 ## Resources
 
-- [JS Arrays](https://www.w3schools.com/jsref/jsref_obj_array.asp)
-- [`push()`](https://www.w3schools.com/jsref/jsref_push.asp)
-- [`pop()`](https://www.w3schools.com/jsref/jsref_pop.asp)
-- [`splice()`](https://www.w3schools.com/jsref/jsref_splice.asp)
-- [`shift()`](https://www.w3schools.com/jsref/jsref_shift.asp)
-- [`unshift()`](https://www.w3schools.com/jsref/jsref_unshift.asp)
+- [JS Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+- [`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+- [`splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- [`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- [`unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
 ## Answers
 
