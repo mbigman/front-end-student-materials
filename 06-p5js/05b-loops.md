@@ -2,9 +2,38 @@
 
 ![looping](https://s3.amazonaws.com/upperline/curriculum-assets/p5js/loop.gif)
 
-For the moment, let's set aside getting our bubbles to move and just focus on drawing ellipses on the screen.
+Life is full of repetitive tasks. Looping is an important concept in computer programming because it allows us to automate boring tasks that we don't always want to do.
+
+Loops can be very powerful. Powerful enough to crash your computer. This lesson will cover the kinds of loops we'll see in Javascript and how to use them.
+
+We're going to start off by drawing a few shapes, and then quicky go into how to use loops to accomplish cool things with our programs.
+
+Let's do just that.
+
+## Some Code
+
+First, let's set up some files. You'll need to `mkdir` a new directory called intro-to-looping. Then `cd` into that directory and `touch` two new files: `index.html` and `sketch.js`.
+
+Then, put this code in those two files.
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+	  <title>Looping with P5</title>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+	  <script type="text/javascript" src="sketch.js"></script>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
 
 ```javascript
+// sketch.js
 function setup() {
   createCanvas(500,400);
 }
