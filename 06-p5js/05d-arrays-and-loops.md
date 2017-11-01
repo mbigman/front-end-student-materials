@@ -13,15 +13,15 @@ To start, let's just `push` some value onto an array every time the mouse is cli
 Here's the starter code-- Notice `bubbles` begins as an empty array:
 
 ```javascript
-var bubbles = [];
-var bubbleSize = 40;
+var bubbles = []
+var bubbleSize = 40
 
 function setup() {
-  createCanvas(500,400);
+  createCanvas(500,400)
 }
 
 function draw() {
-  background(0);
+  background(0)
 }
 
 function mouseClicked() {
@@ -39,7 +39,7 @@ Change the variable `bubble` to this:
 var bubble = {
    x: random(width),
    y: random(height)
- };
+ }
 ```
 
 That's closer, but we're still basically at the same place. We have an array with elements in it, but nothing on the canvas.
@@ -57,7 +57,7 @@ All together that's something like:
 ```javascript
 for(var i = 0; i < bubbles.length; i++) {
 
-  ellipse(___, ___, bubbleSize, bubbleSize);
+  ellipse(___, ___, bubbleSize, bubbleSize)
 }
 ```
 
@@ -83,11 +83,11 @@ The `for` loop should look like this:
 
 ```javascript
 for(var i = 0; i < bubbles.length; i++) {
-  var currentBubble = bubbles[i];
-  ellipse( currentBubble.x, currentBubble.y, bubbleSize, bubbleSize);
+  var currentBubble = bubbles[i]
+  ellipse( currentBubble.x, currentBubble.y, bubbleSize, bubbleSize )
 
-  currentBubble.x += random(-2, 2);
-  currentBubble.y += random(-2, 2);
+  currentBubble.x += random(-2, 2)
+  currentBubble.y += random(-2, 2)
 }
 ```
 
@@ -116,7 +116,7 @@ We should be able to come up with code similar to this:
 function mouseClicked() {
 
   for(var i = bubbles.length - 1; i >= 0; i--) {
-    var currentBubble = bubbles[i];
+    var currentBubble = bubbles[i]
 
     if (mouseX and mouseY are inside of currentBubble) {
 
@@ -132,7 +132,7 @@ Take a look at the [`dist()` function](https://p5js.org/reference/#/p5/dist). It
 function mouseClicked() {
 
   for(var i = bubbles.length - 1; i >= 0; i--) {
-    var currentBubble = bubbles[i];
+    var currentBubble = bubbles[i]
 
     var distance = dist(mouseX, mouseY, currentBubble.x, currentBubble.y)
 
@@ -157,35 +157,35 @@ We'll store the length in a variable called `startingLength` and only add a bubb
 Here's the total final code:
 
 ```javascript
-var bubbles = [];
-var bubbleSize = 40;
+var bubbles = []
+var bubbleSize = 40
 
 function setup() {
-  createCanvas(500,400);
+  createCanvas(500,400)
 }
 
 function draw() {
-  background(0);
+  background(0)
 
   for(var i = 0; i < bubbles.length; i++) {
-    var currentBubble = bubbles[i];
-    ellipse( currentBubble.x, currentBubble.y, bubbleSize, bubbleSize);
+    var currentBubble = bubbles[i]
+    ellipse( currentBubble.x, currentBubble.y, bubbleSize, bubbleSize )
 
-    currentBubble.x += random(-2, 2);
-    currentBubble.y += random(-2, 2);
+    currentBubble.x += random(-2, 2)
+    currentBubble.y += random(-2, 2)
   }
 
 }
 
 function mouseClicked() {
-  var startingLength = bubbles.length;
+  var startingLength = bubbles.length
 
   for(var i = bubbles.length - 1; i >= 0; i--) {
-    var currentBubble = bubbles[i];
+    var currentBubble = bubbles[i]
     var distance = dist(mouseX, mouseY, currentBubble.x, currentBubble.y)
 
     if (distance <= 20) {
-      bubbles.splice(i, 1);
+      bubbles.splice(i, 1)
     }
   }
 
@@ -193,9 +193,9 @@ function mouseClicked() {
     var bubble = {
       x: random(width),
       y: random(height)
-    };
+    }
 
-    bubbles.push(bubble);
+    bubbles.push(bubble)
   }
 }
 ```
