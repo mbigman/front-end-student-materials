@@ -35,16 +35,16 @@ Then, put this code in those two files.
 ```javascript
 // sketch.js
 function setup() {
-  createCanvas(500,400);
+  createCanvas(500,400)
 }
 
 function draw() {
-  var x = 50;
+  var x = 50
 
-  background(0);
-  fill(250);
+  background(0)
+  fill(250)
 
-  ellipse(x, height/2, 40, 40);
+  ellipse(x, height/2, 40, 40)
 }
 ```
 
@@ -114,16 +114,16 @@ Make variable `count` that will start at `0` and grow bigger by one every time t
 
 ```javascript
 function draw() {
-  background(0);
-  fill(250);
+  background(0)
+  fill(250)
 
-  var x = 50;
-  var count = 0;
+  var x = 50
+  var count = 0
 
   while (count < 3) {
-    ellipse(x, height/2, 40, 40);
-    count += 1;
-    x += 50;
+    ellipse(x, height/2, 40, 40)
+    count += 1
+    x += 50
   }
 }
 ```
@@ -168,7 +168,7 @@ for ( ____; when to stop the loop; ____ ) {
 }
 ```
 
-This is just like the conditional to a `while` loop. Our loop would now look like;
+This is just like the conditional to a `while` loop. Our loop would now look like:
 
 ```javascript
 for ( var count = 0; count < 3; ____ ) {
@@ -226,18 +226,18 @@ Here's the final code with a `for` loop:
 
 ```javascript
 function setup() {
-  createCanvas(500,400);
+  createCanvas(500,400)
 }
 
 function draw() {
-  background(0);
-  fill(250);
+  background(0)
+  fill(250)
 
-  var x = 50;
+  var x = 50
 
   for (var i = 0; i < 3; i++) {
-    ellipse(x, height/2, 40, 40);
-    x += 50;
+    ellipse(x, height/2, 40, 40)
+    x += 50
   }
 
 }
