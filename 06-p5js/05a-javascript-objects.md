@@ -14,24 +14,24 @@ Over the next few readings we'll be making some bubbles that wobble over the scr
 That image shows several bubbles, but let's start with one:
 
 ```javascript
-var bubbleSize = 40;
+var bubbleSize = 40
 
-var bubble1X, bubble1Y;
+var bubble1X, bubble1Y
 
 function setup() {
-  createCanvas(500,400);
-  bubble1X = random(0, width);
-  bubble1Y = random(0, height);
+  createCanvas(500,400)
+  bubble1X = random(0, width)
+  bubble1Y = random(0, height)
 }
 
 function draw() {
-  background(0);
-  fill(250);
+  background(0)
+  fill(250)
 
-  ellipse(bubble1X, bubble1Y, bubbleSize, bubbleSize);
+  ellipse(bubble1X, bubble1Y, bubbleSize, bubbleSize)
 
-  bubble1X += random(-2, 2);
-  bubble1Y += random(-2, 2);
+  bubble1X += random(-2, 2)
+  bubble1Y += random(-2, 2)
 }
 ```
 
@@ -54,14 +54,14 @@ That sounds pretty abstract, but it's not so bad, let's make a an object called 
 Nice, the object we created with this code has two properties, `x` and `y`.
 
 ```javascript
-var brick = {x: 10, y: 100};
+var brick = {x: 10, y: 100}
 ```
 #### Creating Objects
 
 We create objects using curly braces
 
 ```javascript
-var emptyObject = {};
+var emptyObject = {}
 ```
 
 #### Properties, {key: value}
@@ -71,7 +71,7 @@ Properties are added inside of an object. A property has two main parts, a *name
 With objects the name to a property is called a **key**.  You will often hear people refer to properties and their values as *key-value pairs*. The object below has one key-value pair, the key is `firstName` and the value is `"Jenny"`:
 
 ```javascript
-var student = {firstName: "Jenny"};
+var student = {firstName: "Jenny"}
 ```
 
 #### Multiple Properties
@@ -79,12 +79,12 @@ var student = {firstName: "Jenny"};
 When there are multiple properties in an object, they are separated by commas. Often objects will be written across multiple lines. Either way is fine as long as your commas and braces are in the right place.
 
 ```javascript
-var student = {firstName: "Jenny", grade: 11};
+var student = {firstName: "Jenny", grade: 10}
 // or
 var student = {
   firstName: "Jenny",
-  grade: 11
-};
+  grade: 10
+}
 ```
 
 #### \* Your Turn \*
@@ -100,7 +100,7 @@ We've seen how new objects are created, but we will also need to *access* the va
 
 `student.firstName` gives us back the value `"Jenny"`.
 
-`student.grade` gives us back the value `11`.
+`student.grade` gives us back the value `10`.
 
 #### Adding Properties
 
@@ -113,12 +113,12 @@ You can also use the same *dot* after the object name plus an `=` to add additio
 Here's the same program built with objects. This may not seem like a huge change from before, but we're headed in the right direction.
 
 ```javascript
-var bubbleSize = 40;
+var bubbleSize = 40
 
-var bubble1;
+var bubble1
 
 function setup() {
-  createCanvas(500,400);
+  createCanvas(500,400)
   bubble1 = {
     x: random(0, width),
     y: random(0, height)
@@ -126,13 +126,13 @@ function setup() {
 }
 
 function draw() {
-  background(0);
-  fill(250);
+  background(0)
+  fill(250)
 
-  ellipse(bubble1.x, bubble1.y, bubbleSize, bubbleSize);
+  ellipse(bubble1.x, bubble1.y, bubbleSize, bubbleSize)
 
-  bubble1.x += random(-2, 2);
-  bubble1.y += random(-2, 2);
+  bubble1.x += random(-2, 2)
+  bubble1.y += random(-2, 2)
 }
 ```
 ## Why are Objects Important
