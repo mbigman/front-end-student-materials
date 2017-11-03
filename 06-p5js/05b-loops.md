@@ -216,7 +216,7 @@ for ( where to start; when to stop; how to count ) {
 
 >Using these common practices, the typical `for` loop would look like this:
 
->```javascript
+```javascript
 for ( var i = 0; i < 3; i++ ) {
   //...
 }
