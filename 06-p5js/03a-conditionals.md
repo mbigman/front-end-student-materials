@@ -4,25 +4,6 @@
 
 Think about how you would write code that would produce the image above. Currently, we're missing one key tool that will enable us to write this code. Here's what we're able to do so far.  
 
-```html
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-	<title>p5 Project</title>
-	  
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
-	<script type="text/javascript" src="sketch.js"></script>
-  </head>
-  <body>
-
-  </body>
-</html>
-```
-
-```javascript
-// sketch.js
 
 var x = 1
 var y = 1
