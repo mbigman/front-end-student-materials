@@ -4,7 +4,7 @@
 
 Think about how you would write code that would produce the image above. Currently, we're missing one key tool that will enable us to write this code. Here's what we're able to do so far.  
 
-
+```
 var x = 1
 var y = 1
 
